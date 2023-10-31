@@ -1,3 +1,15 @@
 # Tipo de dado bool (boolean)
 
-# Ao questionar
+# Ao questionar algo em um programa,
+# só existem duas respostas possíveis:
+# sim (True) ou não (False).
+# Existem vários operadores para se "questionar".
+# Dentre eles o ==, que é o operador lógico
+# que questiona se um valor é iqual a outro
+
+print(10 ==20) # Sim -> True (Verdadeiro)
+print(10 == 9) # Não -> False (Falso)
+print(type(10 == 10))
+print(type(10 == 11))
+print(type(True))
+print(type(False))
