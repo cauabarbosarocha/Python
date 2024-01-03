@@ -15,6 +15,5 @@ menor = 1 < 2
 menor_ou_iqual = 1 < 1
 iqual = 'a' == 'a'
 diferente = 'a' != 'b'
-print(
-    
-)
+
+print(diferente)
