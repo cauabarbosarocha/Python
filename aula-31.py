@@ -13,7 +13,7 @@ try:
     else:
         print(f'O {numero} é ímpar')
 except:    
-    print('Por favor digite um número')
+    print('Por favor digite um número inteiro')
 
 """
 Faça um programa que pergunte a hora ao usuário e, baseando-se no horário
