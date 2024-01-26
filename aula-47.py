@@ -17,7 +17,7 @@ letras_acertadas = ''
 tentativas = 0
 
 while True:
-    letra_digitada = input('Digite um letra: ')
+    letra_digitada = input('Digite uma letra: ')
     tentativas += 1
 
     if len(letra_digitada) > 1:
