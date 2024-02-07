@@ -8,25 +8,43 @@ Não permita que o programa quebre com erros de índices inexistentes na lista.
 
 lista = []
 
+# while True:
+#     entrada = input('Selecione uma opção: \n [i]nserir  [a]pagar  [l]istar:    ')
+#     lista_enumerada = enumerate(lista)
+#     apagar = entrada == 'a' and lista == []
+#     listar = entrada == 'l' and lista == []
+
+#     if entrada == 'i':
+#         valor = input('Item: ')
+#         lista.append(valor)
+#         continue
+
+#     if apagar:
+#         indice = input('Escolha um índice: ')
+#     # item_apagado = float(indice)
+
+#     if listar:
+#         print(next(lista_enumerada))
+#         continue
+#     else:
+#         print('Não à nada para listar.')
+#         continue
 while True:
-    entrada = input('Selecione uma opção: \n [i]nserir  [a]pagar  [l]istar:    ')
-    lista_enumerada = enumerate(lista)
-    apagar = entrada == 'a' and lista == []
-    listar = entrada == 'l' and lista == []
-
-    if entrada == 'i':
-        valor = input('Item: ')
+    opcao = input('Selecione uma opção \n   [i]nserir  [a]pagar  [l]istar: ')
+    if opcao == 'i':
+        # os.system('clear')
+        valor = input('Valor: ')
         lista.append(valor)
-        continue
+    elif opcao == 'a':
+        indice = input('Escolha um índice para ser apagado: ')
+        try:
+            indice = int(indice)
+            del lista[indice]
+        except:
+            print('Não foi possível apagar este ídice')
+    elif opcao == 'l':
+        if len(lista) == 0:
+            print('Nada para listar')
 
-    if apagar:
-        indice = input('Escolha um índice: ')
-    # item_apagado = float(indice)
-
-    if listar:
-        print(next(lista_enumerada))
-        continue
-    else:
-        print('Não à nada para listar.')
-        continue
-
+        for i, valor in enumerate(lista):
+            print(i, valor)
