@@ -40,8 +40,12 @@ while True:
         try:
             indice = int(indice)
             del lista[indice]
-        except:
-            print('Não foi possível apagar este ídice')
+        except ValueError:
+            print('Por favor digite um valor int.')
+        except IndexError:
+            print('índice não existente')
+        except Exception:
+            print('Erro desconhecido')
     elif opcao == 'l':
         if len(lista) == 0:
             print('Nada para listar')
