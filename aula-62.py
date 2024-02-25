@@ -23,7 +23,22 @@ contrário disso:
 
 O primeiro dígito do CPF é 7
 """
-cpf_usuario = input('Digite seu CPF: ')
+import re
+import sys
+
+# cpf_usuario = input('Digite seu CPF: ').replace('.', '').replace('-', '')
+entrada = input('Digite seu CPF: ')
+cpf_usuario = re.sub(
+    r'[^0-9]',
+    '',
+    entrada
+)
+
+entrada_equencial = entrada[0] * len(entrada)
+if entrada_equencial:
+    print('Você enviou dados sequenciais.')
+    sys.exit()
+
 nove_digitos = cpf_usuario[:9]
 contador_regressivo_1 = 10
 
