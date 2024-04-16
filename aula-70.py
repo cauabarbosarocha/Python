@@ -7,6 +7,16 @@ Retorne o total para uma variável e mostre o valor
 da valiável
 """
 
+# numeros = input('Digite quantos números quiser: ')
+def multiplicacao(*args):
+    total = 1
+    for numero in args:
+        total *= numero
+    return total
+
+numeros = 1, 3, 56, 100
+print(multiplicacao(*numeros))
+
 """
 Crie uma função que fale se um númemro é par ou impar.
 Retorne se o número é par ou impar
