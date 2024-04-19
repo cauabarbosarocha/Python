@@ -7,8 +7,8 @@ def saudacao(saudacao):
     return saudar
 
 falar_bom_dia = saudacao('Bom dia')
-falar_bom_dia = saudacao('Boa noite')
+falar_boa_noite = saudacao('Boa noite')
 
 for nomes in ['Cauã', 'Jorge', 'Tom']:
     print(falar_bom_dia(nomes))
-    print(falar_bom_dia(nomes))
+    print(falar_boa_noite (nomes))
