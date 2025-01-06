@@ -23,6 +23,8 @@ print(list(pessoa.values()))
 print(list(pessoa.items()))
 pessoa.setdefault('idade', 0)
 print(pessoa['idade'])
+pessoa.pop('idade')
+print(list(pessoa.values()))
 
 # for chave in pessoa:
 #     print(chave)
