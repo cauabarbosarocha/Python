@@ -34,8 +34,8 @@ cpf_usuario = re.sub(
     entrada
 )
 
-entrada_equencial = entrada == entrada[0] * len(entrada)
-if entrada_equencial:
+entrada_sequencial = entrada == entrada[0] * len(entrada)
+if entrada_sequencial:
     print('Você enviou dados sequenciais.')
     sys.exit()
 
