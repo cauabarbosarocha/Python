@@ -5,7 +5,7 @@
 # items - iterável com chaves e valores
 # setdefault - adiciona valor se a chave não existe
 # copy - retorna uma cópia rasa (shallow copy)
-# get - obtém uam chave
+# get - obtém uma chave
 # pop - apaga uma item com a chave especifica (del)
 # popitem - apaga o último item adicionado
 # update - atualiza um dicionário com outro
