@@ -34,7 +34,14 @@
 # Métodos úteis:
 # add, update, clear, discard
 
-
+set_4 = set()
+set_4.add('Cauã')
+set_4.add(8)
+set_4.update(('Opa, bão?', 1, 2, 3, 4, 5))
+# set_4.clear() # Limpa o set
+set_4.discard(8) # Precisa especificar o valor a ser descartado
+set_4.discard('Cauã')
+print(set_4)
 
 # Operadores úteis:
 # união | união (union) - Une
